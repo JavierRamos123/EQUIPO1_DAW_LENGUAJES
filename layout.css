@@ -1,3 +1,5 @@
+/* Estilos generales */
+
 .barpaco1 {
   height: auto;
   width: 100%;
@@ -10,7 +12,6 @@
   width: 60%;
   border-radius: 5px;
 }
-
 
 .grad1 {/*esto es para poner un fondo gradiante*/
   background-image: linear-gradient(#9b4822, #b86a04);
@@ -36,6 +37,18 @@ text-transform: uppercase;
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+
+/*Duplicar imagen para la derecha*/
+.img1 {
+  width: 50%;
+  height: 50%;
+  -webkit-box-reflect: right;
+}
+.margentop {
+  margin-top: 5px;
+}
+
  
 /* Margenes */
 .margen {
@@ -78,4 +91,21 @@ img {
    */
 }
 
+.imgs2 img {
+  margin: auto;
+  height: 80%;
+}
 
+
+/*Opacidad del mapa*/
+.opacidad {
+  opacity: 0.6;
+}
+
+
+/*Interlineado*/
+.interlineado {
+  line-height: 30px;
+  letter-spacing: 3px;
+  text-indent: 40px;
+}

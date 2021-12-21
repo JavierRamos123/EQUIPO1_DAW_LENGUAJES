@@ -6,7 +6,10 @@ p {
   font-size: 10pt
 }
 
-h1 {/*aqui le ponemos un color a los h1*/
+h1 {
+  font-family: "Latin Modern Roman";
+  font-style: italic;
+  /*aqui le ponemos un color a los h1*/
   color: brown;
   <span style="text-decoration:line-through;">
     /*Este texto aparecerá tachado*/
@@ -27,5 +30,12 @@ h2 {/*aqui le añadimos un color a los h2*/
 body {/*con esto le ponemos color al fondo*/
   background-color: lightsalmon;
    font-display: fallback;
-   letter-spacing: normalS
+   letter-spacing: normalS;
+    background-image: url("https://c0.wallpaperflare.com/preview/592/237/178/malaga-calle-marques-de-larios-spain-paisaje-urbano.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+img {
+  border-radius: 10%;
 }

@@ -36,4 +36,46 @@ text-transform: uppercase;
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
-         
+ 
+/* Margenes */
+.margen {
+  /* En este css tenemos varios margenes creados para diferentes funciones
+  este margen lo utilizamos para subir el top en 30 px */
+  margin-top: 30px;
+}
+.margen1 {
+  /* Este margen 1 se desliza ala derecha 10 px a la izquierda y 30 arriba*/
+  margin-left: 140px;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+.margen2 {
+  margin: 35px;
+}
+.margen3 {
+  margin-left: 200px;
+}
+.margen4 {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+img {
+  /* en este hemos añadido un border radius para que se ajuste al borde un 5%
+  */
+  width: 80%;
+  height: 50%;
+  border-radius: 5%;
+}
+.comida {
+  width: 80%;
+  height: 80%;
+}
+.margen21 {
+  margin: 30px;
+  margin-bottom: 5px;
+  text-align: left; /* aqui hemos añadido un align para que se ajuste a la izquierda y se quede cuadrado 
+   */
+}
+
+

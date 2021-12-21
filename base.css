@@ -5,6 +5,7 @@ p {
   font-display: fallback;
   font-size: 10pt
 }
+
 h1 {/*aqui le ponemos un color a los h1*/
   color: brown;
   <span style="text-decoration:line-through;">
@@ -14,4 +15,16 @@ h1 {/*aqui le ponemos un color a los h1*/
   font-style: italic;
   font-display: fallback;
 </span>+
+}
+
+h2 {/*aqui le añadimos un color a los h2*/
+  color: brown;
+  font-family: "Latin Modern Roman", "serif";
+  font-style: italic;
+}
+
+body {/*con esto le ponemos color al fondo*/
+  background-color: lightsalmon;
+   font-display: fallback;
+   letter-spacing: normalS
 }

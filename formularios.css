@@ -179,3 +179,9 @@ iframe {
   border-radius: 50%;
   background: rgb(247, 225, 192);
 }
+
+
+#iconos {
+  font-size: 36px;
+  margin-left: 50%;
+}

@@ -15,6 +15,7 @@ h1 {/*aqui le ponemos un color a los h1*/
   font-style: italic;
   font-display: fallback;
 </span>+
+  text-align: center; 
 }
 
 h2 {/*aqui le añadimos un color a los h2*/

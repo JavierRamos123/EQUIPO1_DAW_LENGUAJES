@@ -7,11 +7,31 @@
     <meta charset="utf-8" />
     <meta name="author" content="Equipo 1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="formularios.css" rel="stylesheet" />
+    <link href="Menu.css" rel="stylesheet" />
+    <link href="mystyle.css" rel="stylesheet" />
+    <link href="imagenfondo.css" rel="stylesheet" />
+    <link href="opacidad.css" rel="stylesheet"/>
+    <link href="opacidad.css" rel="stylesheet"/>
+    <link href="opacidad.css" rel="stylesheet"/>
+    <link href="interlineadoIconos.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
-  <body class="fondo">
+  <body>
+
+      <script>
+          var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+          })
+          </script>
       
     <!--Esto es el logo de la pagina-->
     <div class="logo">
@@ -34,7 +54,7 @@
         <li><a href="merchandising.html">Merchandising</a></li>
       </ul>
     </nav>
- 
+
     <p class="interlineado">
       
         <p1 class="sombra">      
@@ -46,16 +66,20 @@
 
     <!--Este es el icono con la funcion i-->
     <i class="fa fa-angle-double-down" id="iconos"></i>
-    
+
     <!--Con form se crea el formulario-->
-    <form>
+    <form action="/action_page.php" class="was-validated">
       <!--label es la etiqueta de cada input-->
       <!--input permite crear los cuadros de texto para introducir datos, botones de selección y la checkbox-->
       <section class="formulario">
         <h4>Formulario del Bar Paco</h4>
-        <label for="nombre">Nombre: </label>
+        <label for="nombre" class="form-label">Nombre: </label>
         <!--text crea los cuadros de texto en input-->
-        <div class="tooltip">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">
+                <i class="fa fa-address-book"></i>
+            </span>
+      
           <input
             class="control"
             type="text"
@@ -64,11 +88,21 @@
             placeholder=" Juan"
             maxlength="10"
             required
+            data-bs-toggle="tooltip" title="Escriba aquí su nombre"
           />
-          <span class="tooltiptext"> Escriba su nombre.</span>
-        </div>
-        <label for="apellidos">Apellidos: </label>
-        <div class="tooltip">
+        
+          <div class="valid-feedback">Válido.</div>
+          <div class="invalid-feedback">Por favor, rellena este campo.</div>
+          </div>
+        
+    
+
+        <label for="apellidos" class="form-label">Apellidos: </label>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">
+                <i class="fa fa-address-book"></i>
+            </span>
           <input
             class="control"
             type="text"
@@ -77,64 +111,80 @@
             placeholder="Pérez González"
             maxlength="30"
             required
+            data-bs-toggle="tooltip" title="Escriba aquí sus apellidos"
           />
-          <span class="tooltiptext"> Escriba sus apellidos.</span>
-        </div>
-        <label for="telf">Tel&eacute;fono: </label>
-        <div class="tooltip">
+          <div class="valid-feedback">Válido.</div>
+          <div class="invalid-feedback">Por favor, rellena este campo.</div>
+          </div>
+
+        <label for="telf" class="form-label">Teléfono: </label>
+        
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">
+                ☎
+            </span>
           <input
             class="control"
             type="text"
             id="telefono"
             name="telefono"
-            placeholder=" ☎   656212898"
+            placeholder="656212898"
             minlength="9"
             required
+            data-bs-toggle="tooltip" title="Escriba aquí su número de teléfono fijo o móvil"
           />
-          <span class="tooltiptext"> Escriba su número móvil de contacto.</span>
-        </div>
-        <label for="email">Email: </label>
-        <div class="tooltip">
+          <div class="valid-feedback">Válido.</div>
+          <div class="invalid-feedback">Por favor, rellena este campo.</div>
+          </div>
+          
+
+        <label for="email" class="form-label">Email: </label>
+        
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">
+                ✉
+            </span>
           <input
             class="control"
             type="text"
             id="email"
             name="email"
-            placeholder=" ✉   nombre@correo.com"
+            placeholder="nombre@correo.com"
             minlength="5"
             required
+            data-bs-toggle="tooltip" title="Escriba aquí su dirección de correo electrónico"
           />
-          <span class="tooltiptext"> Escriba su correo electrónico.</span>
-        </div>
+          <div class="valid-feedback">Válido.</div>
+          <div class="invalid-feedback">Por favor, rellena este campo.</div>
+          </div>
+        
         <!--en input radio sirve para crear el botón circular-->
 
-        <label class="opciones">Sexo: </label>
-        <div class="tooltip">
-            <span class="tooltiptext"> Elija su sexo.</span>
-        <label class="container"
-          >Hombre
-          <input type="radio" name="radio" required />
-          <span class="checkmark"></span>
+        <label class="opciones" data-bs-toggle="tooltip" title="Elija su sexo">Sexo: </label>
+
+        <label class="container" ><p id="sexo">Hombre</p>
+          <input type="radio" name="radio" required/>
+          <span class="checkmark" data-bs-toggle="tooltip" title="Hombre"></span>
         </label>
+        
       
-        <label class="container"
-          >Mujer
+        <label class="container"><p id="sexo">Mujer</p>
           <input type="radio" name="radio" required />
-          <span class="checkmark"></span>
+          <span class="checkmark" data-bs-toggle="tooltip" title="Mujer"></span>
         </label>
-        <label class="container"
-          >Otro
+        <label class="container"><p id="sexo">Otro</p>
           <input type="radio" name="radio" required />
-          <span class="checkmark"></span>
+          <span class="checkmark" data-bs-toggle="tooltip" title="Otro"></span>
+          <div class="valid-feedback">Válido.</div>
+         <div class="invalid-feedback">Por favor, rellena este campo.</div>
         </label>
-      </div></span>
+  
      
       
-        <label for="opciones">Elige una opción:</label>
+        <label for="opciones" data-bs-toggle="tooltip" title="Elija una de las siguientes opciones">Elige una opción:</label>
         <!--Con select se crea una lista despegable y 'option' representa cada opción-->
-        <div class="tooltip">
-            <span class="tooltiptext"> Seleccione una consulta.</span>
         <select name="opciones" id="opciones" required>
+            
           <!--<value=""> sirve aquí para que required funcione si no se selecciona nada
             <disable selected hidden> hace que esa opción esté deshabilitada y no aparezca -->
           <option value="" disabled selected hidden></option>
@@ -146,12 +196,9 @@
           <option value="atencion al cliente">Atención al cliente</option>
           <option value="otro">Otro</option>
         </select> 
-      </div></span>
- 
-
+        
+  
         <label for="mensaje">Mensaje: </label>
-        <div class="tooltip">
-            <span class="tooltiptext"> Redacte concisamente su mensaje.</span>
         <textarea
           id="mensaje"
           name="mensaje"
@@ -159,14 +206,15 @@
           cols="75"
           placeholder="Escriba aquí su mensaje detallado."
           required
+          data-bs-toggle="tooltip" title="Escriba su mensaje de formulario de manera detallada."
         ></textarea>
-      </div></span>
-        <input type="checkbox" id="tos" name="tos1" required />
+      
+        <input type="checkbox" id="tos" name="tos1" required data-bs-toggle="tooltip" title="Marque esta casilla para poder continuar." />
         <label for="tos1">He leído los términos y condiciones</label>
       </section>
 
-      <input class="botones" type="submit" value="Enviar" />
-      <input class="botones" type="reset" value="Restaurar" />
+      <input class="botones" type="submit" value="Enviar"  data-bs-toggle="tooltip" title="Enviar el mensaje." />
+      <input class="botones" type="reset" value="Restaurar" data-bs-toggle="tooltip" title="Restaura las opciones." />
       
       <iframe
        class="opacidad" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4525.228516153042!2d-4.447121548054883!3d36.678834191897245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbar%20paco!5e0!3m2!1ses!2ses!4v1635092839615!5m2!1ses!2ses"

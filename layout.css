@@ -109,3 +109,8 @@ img {
   letter-spacing: 3px;
   text-indent: 40px;
 }
+
+/* Imagen fondo */
+.fondo {background-image: url("https://c0.wallpaperflare.com/preview/592/237/178/malaga-calle-marques-de-larios-spain-paisaje-urbano.jpg");
+  background-position: center center;
+  background-size: cover;}

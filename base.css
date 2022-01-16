@@ -20,8 +20,9 @@ h1 {
 
 h2 {/*aqui le añadimos un color a los h2*/
   color: brown;
-  font-family: "Latin Modern Roman", "serif";
+  font-family: "Verdana", "serif";
   font-style: italic;
+  font-size: 1.1em;
 }
 
 body {/*con esto le ponemos color al fondo*/

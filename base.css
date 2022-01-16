@@ -3,7 +3,7 @@ p {
   font-family: "arial", "serif";
   font-style: oblique;
   font-display: fallback;
-  font-size: 10pt
+  font-size: 1em;
 }
 
 h1 {
@@ -12,7 +12,7 @@ h1 {
   text-align: center; 
   color: brown;
    /*Este texto aparecerá tachado*/
-   font-size: 12pt; 
+   font-size: 1.2em; 
    font-family: "Roboto Condensed", "serif";
   font-style: italic;
   font-display: fallback;

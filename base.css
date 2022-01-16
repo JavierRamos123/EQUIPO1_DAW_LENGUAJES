@@ -9,16 +9,15 @@ p {
 h1 {
   font-family: "Latin Modern Roman";
   font-style: italic;
-  /*aqui le ponemos un color a los h1*/
+  text-align: center; 
   color: brown;
+   /*Este texto aparecerá tachado*/
   <span style="text-decoration:line-through;">
-    /*Este texto aparecerá tachado*/
    font-size: 12pt 
    font-family: "Roboto Condensed", "serif";
   font-style: italic;
   font-display: fallback;
 </span>+
-  text-align: center; 
 }
 
 h2 {/*aqui le añadimos un color a los h2*/
@@ -29,11 +28,6 @@ h2 {/*aqui le añadimos un color a los h2*/
 
 body {/*con esto le ponemos color al fondo*/
   background-color: lightsalmon;
-   font-display: fallback;
-   letter-spacing: normalS;
-    background-image: url("https://c0.wallpaperflare.com/preview/592/237/178/malaga-calle-marques-de-larios-spain-paisaje-urbano.jpg");
-    background-position: center center;
-    background-size: cover;
 }
 
 img {

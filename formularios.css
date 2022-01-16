@@ -54,6 +54,11 @@ label {
   color: rgb(85, 49, 18);
   font-size: 120%;
   margin-bottom: 5px;
+  margin-left: 2%;
+}
+
+input[type="checkbox"] {
+  margin-left: 10%;
 }
 
 /*Aplica el estilo a los imput text, select y textarea*/
@@ -63,9 +68,9 @@ textarea {
   padding: 15px;
   border: 2px outset rgb(128, 86, 50);
   resize: horizontal;
-  color: rgb(110, 64, 25);
+  color: rgb(41, 26, 13);
   background-color: rgb(220, 205, 196);
-  margin-bottom: 5%;
+  margin-bottom: 0;
   border-radius: 40px;
 }
 
@@ -97,25 +102,6 @@ iframe {
   padding: 5%;
 }
 
-/*Crea los tooltip de los imput*/
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 200px;
-  background-color: rgb(117, 78, 49);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Posiciona los tooltip */
-  position: bottom;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
 .container {
   margin-top: 2%;
   display: block;
@@ -136,9 +122,14 @@ iframe {
   cursor: pointer;
 }
 
+#sexo {
+  margin-left: 15px;
+}
+
 /* Crea un botón personalizado */
 .checkmark {
   margin-top: 1px;
+  margin-left: 1px;
   position: absolute;
   top: 0;
   left: 0;
@@ -178,10 +169,4 @@ iframe {
   height: 8px;
   border-radius: 50%;
   background: rgb(247, 225, 192);
-}
-
-
-#iconos {
-  font-size: 36px;
-  margin-left: 50%;
 }

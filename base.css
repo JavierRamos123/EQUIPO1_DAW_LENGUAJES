@@ -12,12 +12,10 @@ h1 {
   text-align: center; 
   color: brown;
    /*Este texto aparecerá tachado*/
-  <span style="text-decoration:line-through;">
-   font-size: 12pt 
+   font-size: 12pt; 
    font-family: "Roboto Condensed", "serif";
   font-style: italic;
   font-display: fallback;
-</span>+
 }
 
 h2 {/*aqui le añadimos un color a los h2*/

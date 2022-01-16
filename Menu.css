@@ -52,6 +52,5 @@ en horizontal, utilizando display:inline que indica que en lugar de mostrar la l
 a:active {
   color: black;
 }
-<link href="Menu.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
 

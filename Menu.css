@@ -19,11 +19,10 @@ li a {
   text-decoration: none;
 }
 
-/* Cuando se pasa el ratón por encima de li, 
-cambia el color de fondo a verde */
-li:hover {
-  background-color: #b69467;
+.fondo-nav{
+  background-color: #9b4922;
 }
+
 
 nav {
   width: auto;

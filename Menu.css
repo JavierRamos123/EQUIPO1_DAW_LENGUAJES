@@ -10,7 +10,7 @@ ul {
 /* Creamos un elemento li, con un 2% de padding para que sea más grande cada botón del menú, 
 y alineación del texto centrada para que esté en el centro*/
 li {
-  padding: 2%;
+  padding: 3%;
 }
 /*Definimos un color blanco para las letras de los enlaces de la lista, 
 y text-decoration:none para que no aparezcan los enlaces subrayados*/
@@ -60,16 +60,44 @@ a:active {
 .menu-img{
   width: 25%;
   margin: 2%;
+  
 }
-.fondo-prueba{
-  background-color: #9b4922;
+.fondo-gradient-1{
+  background-image: linear-gradient(#9b4922,#722705);
+  color: white;
+
+}
+.fondo-gradient-2{
+  background-image: linear-gradient(#722705,#9b4922);
   color: white;
 }
 .content-img{
-  margin: 3%;
+  padding-bottom: 2%;
+  border-bottom: 1px white solid;
 }
 .title{
   font-size: 1.5em;
   font-weight: bold;
 }
+.menu-title{
+  background-color: #a8a7a7;
+  padding: 1%;
+  border: 3px black solid;
+}
+.nav-item{
+  height: 5%;
+  padding: 5%;
+  padding-bottom: 2%;
+  margin-bottom: 30px;
+  transition: all 0.4s;
+}
+.nav-item:hover{
+  transform: translatey(-15%);
+  padding-bottom: 5%;
+}
+.nav-item:hover a{
+  color: white;
+}
+
+
 

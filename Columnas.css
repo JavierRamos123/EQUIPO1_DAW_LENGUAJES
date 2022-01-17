@@ -5,6 +5,9 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.column{
+  margin: 3%;
+}
 .texto-columnas{
   -webkit-column-count: 3; /* Chrome, Safari, Opera */
   -moz-column-count: 3; /* Firefox */

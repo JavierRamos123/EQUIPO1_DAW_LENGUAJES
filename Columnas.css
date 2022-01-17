@@ -12,7 +12,7 @@
   margin: 2%
 
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
   .texto-columnas{
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
@@ -20,4 +20,13 @@
   }
 
 }
+@media screen and (max-width: 500px){
+  .texto-columnas{
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+  }
+
+}
+
 

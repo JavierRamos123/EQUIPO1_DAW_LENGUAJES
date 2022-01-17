@@ -55,3 +55,21 @@ a:active {
 }
 
 
+/* IMAGENES DEL MENU */
+
+.menu-img{
+  width: 20%;
+  margin: 2%;
+}
+.fondo-prueba{
+  background-color: #9b4922;
+  color: white;
+}
+.content-img{
+  margin: 3%;
+}
+.title{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+

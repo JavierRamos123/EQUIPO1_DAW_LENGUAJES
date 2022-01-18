@@ -71,7 +71,7 @@ textarea {
   color: rgb(41, 26, 13);
   background-color: rgb(220, 205, 196);
   margin-bottom: 0;
-  border-radius: 40px;
+  border-radius: 0px;
 }
 
 /*Hace que cambie el color de los imput text al clickar sobre ellos*/
@@ -84,7 +84,7 @@ select {
   width: 95%;
   padding: 16px 20px;
   border: 2px outset rgb(128, 86, 50);
-  border-radius: 30px;
+  border-radius: 0px;
   margin-bottom: 5%;
   background-color: rgb(220, 205, 196);
 }
@@ -122,7 +122,7 @@ iframe {
 }
 
 #sexo {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 /* Crea un botón personalizado */

@@ -132,22 +132,18 @@ img {
     transform: translate(-50%, -50%);
 }
 
-/* FlexBox*/
+/*FlexBox*/
 .flex-container {
   display: flex;
   flex-direction: row;
   font-size: 30px;
   text-align: center;
 }
-.flex-item-left {
+.flex-item {
   padding: 10px;
   flex: 50%;
 }
 
-.flex-item-right {
-  padding: 10px;
-  flex: 50%;
-}
 
 @media (max-width: 600px) {
   .flex-container {
